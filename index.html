@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Link Styles-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <img src="images/profile.jpg" alt="Profile Picture" class="image">
+       
+        <div class="text-container">
+
+            <h1>I'm a <span class="multiText"></span></h1>
+<div class="container-images"> 
+    <img src="images/website.png" alt="woman avatar icon" class="image1">
+ <img src="images/insta.png" alt="heart from instagram icon" class="image2">
+ <img src="images/email.png" alt="email icon" class="image3">
+ <img src="images/linkedin.png" alt="linkedin icon" class="image4">
+ <img src="images/youtube2.png" alt="youtube play bottom icon" class="image5">
+ <img src="images/github2.png" alt="avatar github icon" class="image6">
+
+
+</div>
+        </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+    var container = document.querySelector(".container");
+    var multiText = document.querySelector(".container");
+
+    var typingEffect = new Typed(".multiText", {
+        strings: ["designer", "art lover", "creator"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1400,
+        preStringTyped: (pos) => {
+            switch(pos) {
+                    case 0:
+                        container.className = 'container green';
+                        break;
+                    case 1:
+                        container.className = 'container red';
+                        break;
+                    case 2:
+                        container.className = 'container yellow';
+                        break;
+                }
+
+        }
+    });
+</script>
+
+
+    </script>
+
+</body>
+
+</html>
