@@ -14,18 +14,19 @@
 
     <div class="container">
 
-        <img src="images/profile.png" alt="Profile Picture" class="image">
+        <img id="profile-pic" src="images/profile.jpg" alt="Profile Picture" class="image">
        
         <div class="text-container">
 
             <h1>I'm a <span class="multiText"></span></h1>
 <div class="container-images"> 
-    <img src="images/website.png" alt="woman avatar icon" class="image1">
- <img src="images/insta.png" alt="heart from instagram icon" class="image2">
- <img src="images/email.png" alt="email icon" class="image3">
- <img src="images/linkedin.png" alt="linkedin icon" class="image4">
- <img src="images/youtube2.png" alt="youtube play bottom icon" class="image5">
- <img src="images/github2.png" alt="avatar github icon" class="image6">
+
+    <img src="images/website.png"  alt="lamp icon" data-img="images/websiteh.png"class="image1 icon">
+ <img src="images/insta.png" alt="heart from instagram icon" data-img="images/instah.png" class="image2 icon">
+ <img src="images/email.png" alt="email icon" data-img="images/emailh.png" class="image3 icon">
+ <img src="images/linkedin.png" alt="linkedin icon" data-img="images/linkedinh.png" class="image4 icon">
+ <img src="images/youtube2.png" alt="youtube play bottom icon" data-img="images/youtubeh.jpg" class="image5 icon">
+ <img src="images/github2.png" alt="avatar github icon" data-img="images/githubh.png" class="image6 icon">
 
 
 </div>
@@ -57,10 +58,28 @@
 
         }
     });
+
+
+    var icons = document.getElementsByClassName('icon');
+        var profilePic = document.getElementById('profile-pic');
+
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].addEventListener('mouseover', function() {
+                
+                )
+                profilePic.src = icons[i].dataset.img;
+            });
+
+            icons[i].addEventListener('mouseout', function() {
+                profilePic.src = 'images/profile.jpg'; // reset to original on mouse out
+            });
+        }
 </script>
 
 
-    </script>
+ 
+
+    
 
 </body>
 
