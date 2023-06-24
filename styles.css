@@ -89,7 +89,7 @@
    
  }
  .image5 {
-   width: 43px;
+   width: 45px;
    border-radius: 100%;
    margin-right: 5px;
  }
@@ -135,3 +135,111 @@
    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
  }
  
+ #hover-pic{
+   opacity: 0;
+   transition: opacity .7s;
+
+
+ }
+
+ .opacity{
+   position: relative;
+ }
+
+ .image { width: 320px;
+   border-radius: 100%;
+
+ }
+
+ #hover-pic {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: opacity 0.7s;
+ }
+ 
+ .image-container:hover #hover-pic {
+   opacity: 1;
+ }
+
+ a {
+   text-decoration: none;
+}
+
+
+/* Style for desktops and laptops */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 25px;
+}
+
+
+
+/* Style for smaller phones */
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .image {
+    width: 280px;
+  }
+  .image1  .image2, .image3, .image4, .image5, .image6 {
+    width: 38px;
+    
+  }
+  h1 {
+    font-size: 28px;
+   margin-left: 4em; }
+}
+@media screen and (max-width: 992px) {
+  .container-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  width: 350px;
+    margin-left: 122px;
+  }
+  .image1, .image2, .image3, .image4, .image5, .image6 {
+    width: 40%;
+   
+  }
+  .icons-vertical {
+    margin-right: 0;
+    gap: 6px;
+    
+  } 
+  .image2.icon {
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+  .image4.icon {
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+  .image6.icon {
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+
+  .image1.icon {
+    
+    margin-top: 6px;
+  }
+  .image3.icon {
+    
+    margin-top: 6px;
+  }
+  .image5.icon {
+    
+    margin-top: 6px;
+  }
+}
+
+
+
+
