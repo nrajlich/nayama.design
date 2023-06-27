@@ -168,6 +168,7 @@
 }
 
 
+
 /* Style for desktops and laptops */
 .container {
   display: flex;
@@ -239,7 +240,3 @@
     margin-top: 6px;
   }
 }
-
-
-
-
