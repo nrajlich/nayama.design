@@ -39,7 +39,7 @@
 
 
 
- .container.gree .multiText {
+ .container.green .multiText {
 
    color: #009A97;
 
@@ -123,7 +123,7 @@
  }
 
  .text-container {
-   width: auto;
+   width: 350px;
 
 
  }
@@ -176,6 +176,10 @@
    text-decoration: none;
  }
 
+ .black-n {
+
+color: black !important;
+ }
 
 
  /* Style for desktops and laptops */
